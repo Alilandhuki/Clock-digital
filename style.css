@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins&family=Roboto&family=Roboto+Slab&family=Sofia+Sans:ital,wght@0,100;0,200;0,400;1,300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222324;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  overflow-x: hidden;
+  background-image: url(./images/Desktop\ Pc\ Dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+body.active {
+  background-image: url(./images/Desktop\ Pc\ Light.jpg);
+  background-color: rgb(231, 230, 230);
+  color: rgb(29, 29, 29);
+}
+
+.clock-container {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.1s ease-in-out;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  padding: 5px;
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.colon {
+  margin-bottom: 22px;
+}
+
+.side {
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+.second {
+  font-size: 2rem;
+}
+
+.am-pm {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.days span {
+  padding: 5px;
+  margin: 0;
+}
+
+.month {
+  font-size: 1.5rem;
+}
+
+.day {
+  font-size: 2.5rem;
+}
+
+.date {
+  font-size: 2.5rem;
+}
+
+.display-hr {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.button-span {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+i {
+  font-size: 1rem;
+}
+
+.local-time-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 10px;
+  margin-bottom: 10px;
+}
+
+.local-time-toggle-button {
+  padding: 4px 28px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: #f45c48;
+  color: rgb(231, 230, 230);
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 8px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.local-time-toggle-button:hover {
+  transform: scale(1.1);
+}
+
+.local-time-toggle-button.active {
+  transform: scale(1.1);
+  background-color: #ff1e00;
+}
+
+.set-alarm {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 40px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(19, 19, 19);
+  transition: all 0.3s ease-in-out;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.alarm-input {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 0px 10px;
+}
+
+.set-am-pm {
+  display: flex;
+  margin-top: 20px;
+}
+
+.set-hour {
+  width: 4.5vw;
+  height: 2vh;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  box-shadow: inset -5px -5px 5px rgb(211, 209, 209);
+}
+
+.set-hour:focus {
+  outline: none;
+}
+
+.set-minute {
+  width: 4.5vw;
+  height: 2vh;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  box-shadow: inset -5px -5px 5px rgb(211, 209, 209);
+}
+
+.set-minute:focus {
+  outline: none;
+}
+
+.set-sec {
+  width: 4.5vw;
+  height: 2vh;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  box-shadow: inset -5px -5px 5px rgb(211, 209, 209);
+}
+
+.set-sec:focus {
+  outline: none;
+}
+
+.alarm-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.alarm-info {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.set-alarm-button {
+  width: 7vw;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff1e00;
+  box-shadow: 4px 4px 10px rgb(43, 43, 43);
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.set-alarm-button:hover {
+  background-color: #ff1e00;
+  transform: scale(1.1);
+}
+
+.set-am-pm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.set-am {
+  font-weight: 600;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.set-pm {
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.set-am-active {
+  color: red;
+}
+
+ul {
+  padding: 0;
+}

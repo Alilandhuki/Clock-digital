@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://em-content.zobj.net/source/microsoft-teams/337/alarm-clock_23f0.png">
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="clock-container">
+            <div class="clock">
+                <span class="hour">00</span>
+                <span class="colon">:</span>
+                <span class="minute">00</span>
+                <span class="colon">:</span>
+                <div class="side">
+                    <span class="second">00</span>
+                    <span class="am-pm">--</span>
+                </div>
+            </div>
+            <div class="days">
+                <span class="month">---</span>
+                <span class="day">---</span>
+                <span class="date">00</span>
+            </div>
+            
+            <div class="set-alarm">
+                <p class="set-alarm-heading">Set Alarm</p>
+                <div class="alarm-input">
+                    <div>
+                        <input type="number" class="set-hour" id="set-hour" required="required" placeholder="Hour">
+                        <input type="number" class="set-minute" id="set-minute" required="required"
+                            placeholder="Minute">
+                        <input type="number" class="set-sec" id="set-sec" required="required" placeholder="Second">
+                    </div>
+                    <div class="set-am-pm" id="set-am-pm">
+                        <div class="set-am set-am-active" id="set-am">AM</div>
+                        <div>-</div>
+                        <div class="set-pm" id="set-pm">PM</div>
+                    </div>
+                </div>
+                <div class="alarm-buttons">
+                    <button class="set-alarm-button">Set Alarm</button>
+                </div>
+            </div>
+        </div>
+        <div class="local-time-toggle">
+            <button class="local-time-toggle-button"><span class="display-hr">- - - -</span><span class="button-span"><i
+                        class="fa-regular fa-clock"></i></button>
+        </div>
+        <div class="alarm-list-section" id="alarm-list">
+            <ul class="alarm-list">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
